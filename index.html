@@ -1,29 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Alterar Estilo</title>
-    <style>
-        #meuParagrafo {
-            color: black;
-            font-size: 16px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Ricardo Medeiros Marcato</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <div class="container">
+      <img src="foto.jpeg" alt="Foto de Ricardo Marcato" class="profile-img">
+      <h1>Ricardo Medeiros Marcato</h1>
+      <p>Estagiário de BI | Engenheiro de Dados em formação</p>
+    </div>
+  </header>
 
-    <p id="meuParagrafo">Este é um parágrafo que terá seu estilo alterado.</p>
-    <button onclick="alterarEstilo()">Alterar Estilo</button>
+  <section class="about">
+    <h2>Sobre mim</h2>
+    <p>Sou um jovem com paixão por dados e tecnologias, atualmente estagiando como Engenheiro de Dados e com uma forte base em Ciências Exatas. Busco sempre expandir meus conhecimentos e aplicá-los de forma prática e eficaz.</p>
+  </section>
 
-    <script>
-        function alterarEstilo() {
-            const paragrafo = document.getElementById("meuParagrafo");
-            paragrafo.style.color = "blue";
-            paragrafo.style.fontSize = "24px";
-            paragrafo.style.fontWeight = "bold";
-            paragrafo.style.fontFamily = "Arial, sans-serif";
-        }
-    </script>
+  <section class="contact">
+    <h2>Contatos</h2>
+    <ul>
+      <li>Telefone: (41) 9 9945-3762</li>
+      <li>E-mail: mmarcatoricardo@gmail.com | ricardo.marcato@escola.pr.gov.br</li>
+    </ul>
+  </section>
 
+  <section class="education">
+    <h2>Formação Acadêmica</h2>
+    <p><strong>Cursando Ensino Médio</strong> - Colégio da Polícia Militar do Paraná (Conclusão: dez/2025)</p>
+  </section>
+
+  <section class="languages">
+    <h2>Idiomas</h2>
+    <ul>
+      <li><strong>Inglês</strong> - Avançado (Certificação TOEIC)</li>
+      <li><strong>Espanhol</strong> - Intermediário (Certificação CELEM PR)</li>
+    </ul>
+  </section>
+
+  <section class="experience">
+    <h2>Experiência</h2>
+    <ul>
+      <li><strong>Programa de Iniciação Científica Jr</strong> - UFPR, Curitiba, PR (2022-2023)</li>
+      <li><strong>Estagiário de Engenharia de Dados</strong> - Rh Numbers, Curitiba, PR (fev/2024 - atual)</li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Conhecimentos</h2>
+    <ul>
+      <li>Linguagens: DAX, SQL, HTML, CSS</li>
+      <li>Excel</li>
+    </ul>
+  </section>
+
+  <section class="awards">
+    <h2>Medalhas e Conquistas</h2>
+    <ul>
+      <li>Medalhista OBMEP - Prata 2021 | Bronze 2022</li>
+      <li>Medalhista OPRM - Ouro 2022</li>
+      <li>Medalhista Canguru - Ouro 2022 | Ouro 2023 | Ouro 2024</li>
+    </ul>
+  </section>
+
+  <section class="links">
+    <h2>Redes Sociais</h2>
+    <div class="social-links">
+      <a href="https://www.instagram.com/ricardo.marcato/" class="button">Instagram</a>
+      <a href="https://github.com/RicardoMedeirosMarcato" class="button">GitHub</a>
+      <a href="https://www.linkedin.com/in/ricardo-medeiros-marcato-346b362b1/" class="button">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- NOVA SEÇÃO DE INTERATIVIDADE COM JAVASCRIPT -->
+  <section class="interatividade">
+    <h2>Interatividade com JavaScript</h2>
+    <div style="text-align: center;">
+      <button onclick="alterarEstilo()">Alterar estilo do parágrafo</button>
+      <button onclick="mostrarDataHora()">Mostrar data e hora</button>
+      <button onclick="trocarImagem()">Trocar imagem</button>
+    </div>
+    <p id="dataHora" style="text-align: center; margin-top: 20px;"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ricardo Medeiros Marcato - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Importando o JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
