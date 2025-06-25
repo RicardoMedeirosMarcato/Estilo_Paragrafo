@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alterar Estilo</title>
+    <style>
+        #meuParagrafo {
+            color: black;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="meuParagrafo">Este é um parágrafo que terá seu estilo alterado.</p>
+    <button onclick="alterarEstilo()">Alterar Estilo</button>
+
+    <script>
+        function alterarEstilo() {
+            const paragrafo = document.getElementById("meuParagrafo");
+            paragrafo.style.color = "blue";
+            paragrafo.style.fontSize = "24px";
+            paragrafo.style.fontWeight = "bold";
+            paragrafo.style.fontFamily = "Arial, sans-serif";
+        }
+    </script>
+
+</body>
+</html>
